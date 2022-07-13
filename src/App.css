@@ -7,6 +7,73 @@
   pointer-events: none;
 }
 
+body {
+  background-color: #2E182E;
+}
+
+.form{
+  width: 400px;
+  height: 250px;
+  margin: auto;
+  padding: 2px;
+  background-color: #4B323B;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0 0 -200px;
+  text-align: center;
+}
+
+input{
+  margin-bottom: 20px;
+}
+
+button{
+  margin-top: 10px;
+  color: white;
+  background-color: #4D2136;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px 100px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 3px;
+  border: none;
+  box-shadow: inset 20px -20px 60px #2b121e,
+            inset -20px 20px 60px #EF5D6A;
+  transition: box-shadow 300ms, transform 70ms;
+}
+button:hover{
+  box-shadow: inset 20px -20px 60px #3a1929,
+  inset -20px 20px 60px #e77983;
+}
+button:active{
+  transform: scale(0.9, 0.8);
+}
+
+.email {
+  width: 240px;
+  padding: 7px 0 ;
+  border-radius: 5px;
+  border: none;
+  box-shadow: #FB565C 5px 5px 5px;
+  border-top-left-radius: 0;
+  padding-left: 10px;
+}
+
+.email::placeholder {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+h1{
+  color: white;
+}
+
+label {
+  color: white;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
